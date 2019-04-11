@@ -1,7 +1,7 @@
 # rhyme_words
 
-##Test Case: POST 
-###Case 1 : When data formmat is wrong
+## Test Case: POST 
+### Case 1 : When data formmat is wrong
   
 ```
 $ curl --request POST --header "Content-Type: application/json" --data '{"word":["Disputing","Shooting"]}'  http://localhost:5000/rhyme/api/rhyme
@@ -10,7 +10,7 @@ $ curl --request POST --header "Content-Type: application/json" --data '{"word":
 }
 
 ```
-###Case 2 : When data is empty
+### Case 2 : When data is empty
 
 ```
 $ curl --request POST \
@@ -22,7 +22,7 @@ $ curl --request POST \
 
 ```
 
-###Case 3 : When data is correct format
+### Case 3 : When data is correct format
 
 ```
 $ curl --request POST \
@@ -43,7 +43,7 @@ $ curl --request POST \
 }
 ```
 
-###Case 4: When data field is missed
+### Case 4: When data field is missed
 
 ```
 $ curl --request POST \
@@ -53,8 +53,8 @@ $ curl --request POST \
   "error": "Bad request"
 }
 ```
-##Test Case: GET 
-###Case 1: 
+## Test Case: GET 
+### Case 1: 
 
 ```
 $ curl --request GET http://localhost:5000/rhyme/api/word
