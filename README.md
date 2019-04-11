@@ -1,6 +1,13 @@
 # rhyme_words
 
 ## Test Case: POST 
+
+Sample input json:  {"words": ["word1", "word2", "word3"]}
+
+Sample output json: { "word1":[List of matching rhyming words],
+                      "word2": [list of matching rhyming  words],
+                      "word3": [List of matching rhyming  words]}
+
 ### Case 1 : When data formmat is wrong
   
 ```
