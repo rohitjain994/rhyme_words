@@ -49,8 +49,29 @@ $ curl --request POST \
   ]
 }
 ```
+### Case 4: When one of word does not have any rhyming words
 
-### Case 4: When data field is missed
+```
+$ curl --request POST \
+>    --header "Content-Type: application/json" \
+>    --data '{"words":["Disputing","Shooting","Orange"]}' \
+>    http://localhost:5000/rhyme/api/rhyme
+{
+  "Disputing": [
+    "Computing"
+  ],
+  "Orange": null,
+  "Shooting": [
+    "Computing",
+    "Polluting",
+    "Diluting",
+    "Commuting",
+    "Recruiting"
+  ]
+}
+```
+
+### Case 5: When data field is missed
 
 ```
 $ curl --request POST \
