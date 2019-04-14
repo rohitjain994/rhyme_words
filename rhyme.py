@@ -32,9 +32,7 @@ def get_rhyme(matching_word):
         cnt = get_character_match(matching_word,word)
         if cnt != 0:
             if cnt not in match_word:
-                l = []
-                l.append(word)
-                match_word[cnt] = l
+                match_word[cnt] = [word]
             else:
                 match_word[cnt].append(word)
     if match_word:
